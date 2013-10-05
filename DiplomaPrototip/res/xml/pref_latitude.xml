@@ -1,0 +1,107 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<!-- nastavitve mape -->
+    <PreferenceCategory android:title="@string/pref_kategorija_mapa" >
+    	<CheckBoxPreference
+	        android:defaultValue="true"
+	        android:key="key_moja_lokacija"
+	        android:summary="@string/pref_moja_lokacija_podnaslov"
+	        android:title="@string/pref_moja_lokacija" />
+    	
+    	<CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="key_kompas"
+	        android:summary="@string/pref_kompas_podnaslov"
+	        android:title="@string/pref_kompas_naslov" />
+    	
+    	<CheckBoxPreference
+	        android:defaultValue="true"
+	        android:key="key_zoom"
+	        android:summary="@string/pref_zoom_podnaslov"
+	        android:title="@string/pref_zoom_naslov" />
+
+	    <EditTextPreference
+	        android:capitalize="words"
+	        android:defaultValue="Janez"
+	        android:inputType="textCapWords"
+	        android:key="example_text"
+	        android:maxLines="1"
+	        android:selectAllOnFocus="true"
+	        android:singleLine="true"
+	        android:title="@string/pref_title_display_name" />
+	
+	    <!-- Seznam tipov pegleda mape zemljevida -->
+	    <ListPreference
+	        android:defaultValue="0"
+	        android:entries="@array/pref_pogled_mape_naslovi"
+	        android:entryValues="@array/pref_pogled_mape_vrednosti"
+	        android:key="key_pogled_mape"
+	        android:negativeButtonText="@null"
+	        android:positiveButtonText="@null"
+	        android:title="@string/pref_pogled_mape_naslov" />
+    </PreferenceCategory>
+    
+    <!-- nastavitve soritve latitude -->
+    <PreferenceCategory android:title="@string/pref_kategorija_latitude" >
+	    <CheckBoxPreference
+	        android:defaultValue="true"
+	        android:key="notifications_new_message"
+	        android:title="@string/pref_storitev_latitude_naslov" 
+	        android:summary="@string/pref_storitev_latitude_podnaslov"/>
+	
+	    <CheckBoxPreference
+	        android:defaultValue="true"
+	        android:dependency="notifications_new_message"
+	        android:key="notifications_new_message_vibrate"
+	        android:title="@string/pref_title_vibrate" />
+	    
+	    <ListPreference
+	        android:defaultValue="300"
+	        android:entries="@array/pref_cas_posodobitve_naslovi"
+	        android:entryValues="@array/pref_cas_posodobitve_vrednosti"
+	        android:dependency="notifications_new_message_vibrate"
+	        android:key="key_cas_posodobitve"
+	        android:negativeButtonText="@null"
+	        android:positiveButtonText="@null"
+	        android:title="@string/pref_naslov_cas_posodobitve" />
+
+    </PreferenceCategory>
+    
+    <!-- nastavitve zgodovine lokacij -->
+    <PreferenceCategory android:title="@string/pref_kategorija_latitude_zgodovina" >
+    	<ListPreference
+        android:defaultValue="1440"
+        android:entries="@array/pref_zgodovina_cas_naslovi"
+        android:entryValues="@array/pref_zgodovina_cas_vrednosti"
+        android:key="key_zgodovina_cas"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_zgodovina_cas_naslov" />
+    	
+    	<ListPreference
+        android:defaultValue="10"
+        android:entries="@array/pref_zgodovina_st_naslovi"
+        android:entryValues="@array/pref_zgodovina_st_vrednosti"
+        android:key="key_zgodovina_st"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_zgodovina_st_naslov" />
+    </PreferenceCategory>    
+    <!-- GPS -->
+    <PreferenceCategory android:title="@string/pref_kategorija_gps" >
+    	<CheckBoxPreference
+	        android:defaultValue="true"
+	        android:key="key_gps"
+	        android:title="@string/pref_gps_naslov" 
+	        android:summary="@string/pref_gps_podnaslov"/>
+    </PreferenceCategory>
+    
+    <Preference android:title="@string/prefs_nastavitve_racunov" >
+		<intent android:action="android.settings.SYNC_SETTINGS" />
+	</Preference>
+    <Preference 
+        android:title="Razveljavi nastavitve" 
+        android:key="key_privzeto" >
+		
+	</Preference>
+
+</PreferenceScreen>

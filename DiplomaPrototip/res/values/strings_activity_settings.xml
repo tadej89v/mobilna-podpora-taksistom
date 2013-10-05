@@ -1,0 +1,105 @@
+<resources>
+	<!-- naslov aktivnosti nastavitev -->
+    <string name="naslov_aktivnosti_nastavitev">Nastavitve</string>
+
+    <!-- naslovi kategorij nastavitev -->
+    <string name="pref_kategorija_mapa">Google Maps</string>
+    <string name="pref_kategorija_latitude">Latitude</string>
+    <string name="pref_kategorija_latitude_zgodovina">Zgodovina lokacij</string>
+    <string name="pref_kategorija_gps">GPS</string>
+
+    <!-- Nastavitve mape zemljevida -->
+    <string name="pref_moja_lokacija">Moja lokacija</string>
+    <string name="pref_moja_lokacija_podnaslov">Prikazan gumb na zemljevidu za mojo trenutno lokacijo</string>
+    
+    <string name="pref_kompas_naslov">Kompas</string>
+    <string name="pref_kompas_podnaslov">Prikazan kompas na zmeljevidu</string>
+    
+    <string name="pref_zoom_naslov">Zoom kontrole</string>
+    <string name="pref_zoom_podnaslov">Prikaz zoom kontrol na zemljevidu</string>
+    
+    <string name="pref_title_display_name">Prikazano ime</string>
+    <string name="pref_default_display_name">Janezek</string>
+    
+    <string name="pref_pogled_mape_naslov">Pogled</string>
+	<string name="pref_pogled_mape_podnaslov">Tipi pogleda mape zemljevida</string>
+	
+    <string-array name="pref_pogled_mape_naslovi">
+        <item>Normal</item>
+        <item>Hybrid</item>
+        <item>Satellite</item>
+        <item>Terrain</item>
+    </string-array>
+    <string-array name="pref_pogled_mape_vrednosti">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- nastavitve za zgodovino lokacij Latitude -->
+    <string name="pref_zgodovina_cas_naslov">Lokacije pred</string>
+	<string name="pref_zgodovina_st_naslov">Št. lokacij</string>
+    <string-array name="pref_zgodovina_cas_naslovi">
+        <item>15 minut</item>
+        <item>30 minut</item>
+        <item>1 uro</item>
+        <item>3 ure</item>
+        <item>6 ur</item>
+        <item>1 dan</item>
+        <item>Nikoli</item>
+    </string-array>
+    <string-array name="pref_zgodovina_cas_vrednosti">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>1440</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="pref_zgodovina_st_naslovi">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="pref_zgodovina_st_vrednosti">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <!-- Nastavitve za storitev Latitude -->
+    <string name="pref_storitev_latitude_naslov">Google Latitude</string>
+    <string name="pref_storitev_latitude_podnaslov">Omogočanje storitve Google Latitude</string>
+    <string name="pref_title_vibrate">Samodejno posodabljanje</string>
+    <string name="pref_naslov_cas_posodobitve">Čas posodobitve</string>
+    
+    
+    <string-array name="pref_cas_posodobitve_naslovi">
+        <item>1 minuta</item>
+        <item>5 minut</item>
+        <item>10 minut</item>
+        <item>30 minut</item>
+        <item>1 ura</item>
+        <item>2 ure</item>
+    </string-array>
+    <string-array name="pref_cas_posodobitve_vrednosti">
+        <item>60</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1800</item>
+        <item>3600</item>
+        <item>7200</item>
+    </string-array>
+
+    <string name="pref_gps_naslov">Vključitev GPS</string>
+    <string name="pref_gps_podnaslov">Omogočanje GPS povezave</string>
+    <string name="prefs_nastavitve_racunov">Sistemske nastavitve</string>
+</resources>

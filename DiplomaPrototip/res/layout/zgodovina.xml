@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ozadje"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginBottom="5dp">
+        
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="@string/zgodovina_ime"
+	        android:textSize="16sp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignBottom="@+id/id_zgodovina_izhod"/>
+
+        <Button
+            android:id="@+id/id_zgodovina_izhod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/exit_button"
+            android:text="@string/cilj_izhod"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="@string/zgodovina_nasl"
+	        android:layout_marginTop="10dp"/>
+	
+    <RadioGroup
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center">
+
+		<RadioButton
+		    android:id="@+id/id_zgodovina_st"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="5dp"
+		    android:checked="true"
+		    android:text="@string/zgodovina_st" />
+			
+		<RadioButton 
+		    android:id="@+id/id_zgodovina_cas"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/zgodovina_cas"
+		    android:layout_marginTop="5dp"
+		    android:layout_marginRight="10dp"/>
+	</RadioGroup>
+	
+    <Button
+        android:id="@+id/id_zgodovina_potrdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/zgodovina_prikazi"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/taxi_button"/>
+
+</LinearLayout>

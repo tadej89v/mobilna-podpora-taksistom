@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    
+    <item 
+        android:id="@+id/settings" 
+        android:icon="@drawable/ic_settings" android:title="Nastavitve">
+    </item>
+    <item android:id="@+id/zgodovina" android:icon="@drawable/ic_zgodovina" android:title="Zgodovina"></item>
+    <item android:id="@+id/odjava" android:icon="@drawable/ic_menu_latitude" android:title="Odjava">
+    </item>
+    <item 
+        android:id="@+id/izhod" 
+        android:icon="@drawable/ic_menu_exit" android:title="Izhod">
+    </item>
+    
+    
+</menu>

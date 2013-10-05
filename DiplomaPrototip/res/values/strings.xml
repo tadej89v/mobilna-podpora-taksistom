@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DiplomaPrototip</string>
+    <string name="title_activity_google_maps">GoogleMaps</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="taxi_ime">Moj TAXI</string>
+    <string name="toggle_on">On</string>
+    <string name="toggle_off">Off</string>
+    <string name="taxi_signal">Signal</string>
+    <string name="naslov_lista_taxistov">Lista taxistov</string>
+    <string name="compass">Compass</string>
+    <string name="mylocation_button">MyLocation Button</string>
+    <string name="zoom_buttons">Zoom Buttons</string>
+    <string name="mylocation_layer">MyLocation Layer</string>
+    <string name="map_not_ready">Map is not ready yet</string>
+    <string name="main_no_items">Lista taxistov je prazna!</string>
+    <string name="izbira_ok">Naroči</string>
+    <string name="izbira_cancel">Prekliči</string>
+    <string name="cilj_moj_naslov">Določi moj cilj..</string>
+    <string name="cilj_naslov">Naslov:</string>
+    <string name="cilj_potrdi">Potrdi cilj</string>
+    <string name="cilj_tocka">Določi točko na zemljevidu.</string>
+    <string name="cilj_izberi_tocko">Izberi lokacijo..</string>
+    <string name="cilj_napaka">Napačen naslov!!</string>
+    <string name="cilj_ime">Določi moj cilj..</string>
+    <string name="cilj_potrdi_tocko">Potrdi</string>
+    <string name="cilj_tocka_naslov">Ali je to vaša željena destinacija?</string>
+    <string name="cilj_izhod">X</string>
+    <string name="cilj_preklici">Prekliči cilj!</string>
+    <string name="stranka_naslov1">STRANKA:</string>
+    <string name="stranka_naslov2">..potrebuje PREVOZ do:</string>
+    <string name="taxist_naslov">Potrditev taxista?!</string>
+    <string name="cilj_min">min</string>
+    <string name="cilj_km">km</string>
+    <string name="zgodovina_ime">Zgodovina lokacij</string>
+    <string name="zgodovina_prikazi">Prikaži zgodovino</string>
+    <string name="zgodovina_nasl">Zgodovina pred..</string>
+    <string name="zgodovina_cas">t časom</string>
+    <string name="zgodovina_st">št. lokacij</string>
+    <string name="izhod">IZHOD</string>
+    <string name="izhod_ime">Izhod</string>
+    <string name="izhod_ime_2">Želite zapustiti aplikacijo?</string>
+    <string name="odjava">Odjava</string>
+    <string name="odjava_ime">Se želite odjaviti..</string>
+    <string name="tarifa">Tarifa:</string>
+
+    <string-array name="tarifa_vrednosti">
+        <item>0.50 EUR</item>
+        <item>1 EUR</item>
+        <item>1.50 EUR</item>
+        <item>2 EUR</item>
+        <item>4 EUR</item>
+        <item>5 EUR</item>
+        <item>8 EUR</item>
+        <item>10 EUR</item>
+    </string-array>
+
+    <string name="title_activity_prijava_gtalk">Prijava Google Talk</string>
+    <string name="talk_name">Name</string>
+    <string name="talk_email">Email</string>
+    <string name="talk_password">Password</string>
+    <string name="talk_error">Napaka pri prijavi!</string>
+
+</resources>

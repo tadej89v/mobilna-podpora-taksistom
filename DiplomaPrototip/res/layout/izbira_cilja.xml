@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ozadje"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginBottom="5dp">
+        
+        <TextView
+            android:id="@+id/id_cilj_zgoraj"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="@string/cilj_ime"
+	        android:textSize="16sp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignBottom="@+id/id_cilj_izhod"/>
+
+        <Button
+            android:id="@+id/id_cilj_izhod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/exit_button"
+            android:text="@string/cilj_izhod"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/id_cilj_obstaja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"/>
+    
+	<TextView 
+        android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_marginBottom="10dp"
+   		android:layout_marginRight="10dp"
+   		android:text="@string/cilj_naslov"/>
+   	
+   	<EditText 
+        android:id="@+id/id_cilj_naslov"
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_marginRight="10dp"
+  		android:inputType="text"/>
+
+    <Button
+        android:id="@+id/id_cilj_potrdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cilj_potrdi"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/taxi_button"/>
+    
+    <TextView
+        android:id="@+id/id_cilj_napaka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/cilj_napaka"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/holo_red_dark"
+        android:visibility="invisible" />
+    
+    <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/cilj_tocka"
+    		android:layout_marginBottom="5dp"
+    		android:layout_marginRight="10dp"/>
+    <Button
+        android:id="@+id/id_cilj_tocka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cilj_izberi_tocko"
+        android:background="@drawable/taxi_button"
+        android:layout_marginRight="10dp"/>
+    
+    <Button
+        android:id="@+id/id_cilj_preklici"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/taxi_button"
+        android:text="@string/cilj_preklici"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

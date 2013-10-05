@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ozadje"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginBottom="5dp">
+        
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="@string/odjava_ime"
+	        android:textSize="20sp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignBottom="@+id/id_izhod_odjava"/>
+
+        <Button
+            android:id="@+id/id_izhod_odjava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/exit_button"
+            android:text="@string/cilj_izhod"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+	<TextView
+	    	android:id="@+id/id_racun_odjava"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:textSize="16sp"
+	        android:lines="2"
+	        android:layout_marginTop="10dp"
+        	android:layout_marginRight="10dp"/>
+	
+    <Button
+        android:id="@+id/id_odjava_potrdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/odjava"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/taxi_button"/>
+
+</LinearLayout>

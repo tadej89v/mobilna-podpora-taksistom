@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GoogleMaps" >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:padding="5dp"
+       android:layout_gravity="top" 
+       android:background="@drawable/ozadje_menu">
+		
+		<ImageView
+		    android:id="@+id/image"
+		    android:layout_width="55dp"
+		    android:layout_height="55dp"
+		    android:layout_alignParentLeft="true"
+		    android:src="@drawable/ic_taxi" />
+
+	    <TextView
+	        android:id="@+id/textView_ime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/image"
+	        android:text="@string/taxi_ime"
+	        android:textColor="#EE7601"
+	        android:textSize="20sp" 
+	        android:paddingLeft="3dp"/>
+	    <TextView
+	        android:id="@+id/textView_singal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/image"
+	        android:text="@string/taxi_signal"
+	        android:textColor="#FB9648"
+	        android:textSize="12sp" 
+	        android:paddingLeft="4dp"
+	        android:layout_below="@id/textView_ime"/>
+			     
+		<ToggleButton
+		    android:id="@+id/btn_prost"
+		    android:layout_width="55dp"
+		    android:layout_height="55dp"
+		    android:textOff=""
+		    android:textOn=""
+		    android:background="@drawable/button_sytle"
+		    android:layout_toLeftOf="@+id/id_seznam"/>
+	    
+	    <Button 
+	        android:id="@+id/id_tocka"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/ic_point"
+			android:layout_toLeftOf="@+id/id_seznam"/>
+	     
+	    <Button 
+	        android:id="@+id/id_seznam"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/ic_seznam"
+	        android:layout_alignParentRight="true"
+		    android:layout_marginLeft="7dp"
+		    android:layout_marginRight="5dp"
+	        />
+	</RelativeLayout>
+	<FrameLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+   		
+	    <fragment
+		    android:id="@+id/map"
+		    android:name="com.google.android.gms.maps.SupportMapFragment"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" />
+		
+		<TextView
+		    android:id="@+id/id_cilj_pokazi"
+		    android:layout_width="match_parent"
+		    android:layout_height="80dp"
+		    android:layout_gravity="top"
+		    android:background="@drawable/ozadje_obvestilo"
+		    android:padding="5dp"
+		    android:textColor="@android:color/white"
+		    android:textSize="16sp"
+		    android:visibility="invisible"/>
+
+		<LinearLayout
+		    android:id="@+id/id_linear"
+			android:layout_width="match_parent"  
+		    android:layout_height="30dp"
+		    android:orientation="horizontal"
+		    android:layout_gravity="bottom"
+		   	android:gravity="center"
+		    android:layout_margin="10dp"
+		    android:background="@android:color/holo_orange_light"
+		    android:visibility="invisible">
+		    
+		    <TextView
+		   		android:id="@+id/id_cilj_km"
+			    android:layout_width="wrap_content"  
+			    android:layout_height="wrap_content"
+			    android:textSize="22sp"
+		        android:layout_gravity="center"
+		        android:layout_marginRight="13dp"/>
+		    
+	   		<TextView
+		   	    android:id="@+id/id_cilj_min"
+		        android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content"
+		        android:textSize="22sp"
+		        android:layout_gravity="center"
+		        android:layout_marginRight="13dp"/>
+	   		
+	   		<TextView
+		   	    android:id="@+id/id_cilj_cena"
+		        android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content"
+		        android:textSize="22sp"
+		        android:layout_gravity="center"/>
+	   		
+		</LinearLayout>
+	</FrameLayout>
+	
+	
+</LinearLayout>
